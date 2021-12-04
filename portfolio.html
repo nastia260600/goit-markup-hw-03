@@ -12,102 +12,118 @@
 <body>
    <header class="header">
       <div class="container">
-         <a href="#" class="header__logo logo"><span>Web</span>Studio</a>
+         <div class="header__body">
+            <a href="index.html" class="header__logo logo"><span>Web</span>Studio</a>
 
-         <nav class="header__menu">
-            <ul>
-               <li><a href="index.html" class="header__menu-link">Студия</a></li>
-               <li><a href="portfolio.html" class="header__menu-link">Портфолио</a></li>
-               <li><a href="#" class="header__menu-link">Контакты</a></li>
+            <nav>
+               <ul class="header__menu">
+                  <li><a href="index.html" class="header__menu-link">Студия</a></li>
+                  <li><a href="portfolio.html" class="header__menu-link active">Портфолио</a></li>
+                  <li><a href="contact.html" class="header__menu-link">Контакты</a></li>
+               </ul>
+            </nav>
+
+            <ul class="header__contact">
+               <li><a href="mailto:info@devstudio.com" class="header__email email">info@devstudio.com</a></li>
+               <li><a href="tel:+380961111111" class="header__phone email">+38 096 111 11 11</a></li>
             </ul>
-         </nav>
-
-         <ul>
-            <li><a href="mailto:info@devstudio.com" class="header__email email">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="header__phone email">+38 096 111 11 11</a></li>
-         </ul>
+         </div>
       </div>
    </header>
 
    <main>
       <section class="portfolio">
          <div class="container">
-            <div class="portfolio__filter">
-               <ul>
-                  <li><button type="button">Все</button></li>
-                  <li><button type="button">Веб-сайты </button></li>
-                  <li><button type="button">Приложения</button></li>
-                  <li><button type="button">Дизайн</button></li>
-                  <li><button type="button">Маркетинг</button></li>
-               </ul>
-            </div>
-            <div class="portfolio__cards">
-               <ul>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/01.jpg" alt="Веб-сайт Технокряк" width="370">
+            <ul class="portfolio__filter">
+               <li><button type="button">Все</button></li>
+               <li><button type="button">Веб-сайты </button></li>
+               <li><button type="button">Приложения</button></li>
+               <li><button type="button">Дизайн</button></li>
+               <li><button type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="portfolio__cards">
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/01.jpg" alt="Веб-сайт Технокряк" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Технокряк</h2>
                         <p class="portfolio__card-type">Веб-сайт</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/02.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/02.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Постер New Orlean vs Golden Star</h2>
                         <p class="portfolio__card-type">Дизайн</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/03.jpg" alt="Веб-сайт Ресторан Seafood" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/03.jpg" alt="Веб-сайт Ресторан Seafood" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Ресторан Seafood</h2>
                         <p class="portfolio__card-type">Приложение</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/04.jpg" alt="Проект Prime" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/04.jpg" alt="Проект Prime" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Проект Prime</h2>
                         <p class="portfolio__card-type">Маркетинг</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/05.jpg" alt="Проект Boxes" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/05.jpg" alt="Проект Boxes" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Проект Boxes</h2>
                         <p class="portfolio__card-type">Приложение</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/06.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/06.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Inspiration has no Borders</h2>
                         <p class="portfolio__card-type">Веб-сайт</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/07.jpg" alt="Издание Limited Edition" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/07.jpg" alt="Издание Limited Edition" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Издание Limited Edition</h2>
                         <p class="portfolio__card-type">Дизайн</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/08.jpg" alt="Проект LAB" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/08.jpg" alt="Проект LAB" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Проект LAB</h2>
                         <p class="portfolio__card-type">Маркетинг</p>
                      </div>
-                  </li>
-                  <li>
-                     <div class="portfolio__card">
-                        <img src="images/portfolio/09.jpg" alt="Приложение Growing Business" width="370">
+                  </div>
+               </li>
+               <li>
+                  <div class="portfolio__card">
+                     <img src="images/portfolio/09.jpg" alt="Приложение Growing Business" width="370">
+                     <div class="portfolio__card-info">
                         <h2 class="portfolio__card-name">Growing Business</h2>
                         <p class="portfolio__card-type">Приложение</p>
                      </div>
-                  </li>
-               </ul>
-            </div>
+                  </div>
+               </li>
+            </ul>
          </div>
       </section>
    </main>

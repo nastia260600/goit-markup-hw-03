@@ -6,40 +6,43 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Главная</title>
+   <link rel="stylesheet" href="css/modern-normalize.css">
    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
    <header class="header">
       <div class="container">
-         <a href="#" class="header__logo logo"><span>Web</span>Studio</a>
+         <div class="header__body">
+            <a href="index.html" class="header__logo logo"><span>Web</span>Studio</a>
 
-         <nav class="header__menu">
-            <ul>
-               <li><a href="index.html" class="header__menu-link">Студия</a></li>
-               <li><a href="portfolio.html" class="header__menu-link">Портфолио</a></li>
-               <li><a href="#" class="header__menu-link">Контакты</a></li>
+            <nav>
+               <ul class="header__menu">
+                  <li><a href="index.html" class="header__menu-link active">Студия</a></li>
+                  <li><a href="portfolio.html" class="header__menu-link">Портфолио</a></li>
+                  <li><a href="contact.html" class="header__menu-link">Контакты</a></li>
+               </ul>
+            </nav>
+
+            <ul class="header__contact">
+               <li><a href="mailto:info@devstudio.com" class="header__email email">info@devstudio.com</a></li>
+               <li><a href="tel:+380961111111" class="header__phone email">+38 096 111 11 11</a></li>
             </ul>
-         </nav>
-
-         <ul>
-            <li><a href="mailto:info@devstudio.com" class="header__email email">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="header__phone email">+38 096 111 11 11</a></li>
-         </ul>
+         </div>
       </div>
    </header>
 
    <main>
       <section class="mainscreen">
          <div class="container">
-            <h1>Эффективные решения для вашего бизнеса</h1>
+            <h1 class="mainscreen__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button">Заказать услугу</button>
          </div>
       </section>
 
       <section class="benefits">
          <div class="container">
-            <ul>
+            <ul class="benefits__cards">
                <li class="benefits__card">
                   <h3 class="benefits__title">Внимание к деталям</h3>
                   <p class="benefits__text">
@@ -70,59 +73,55 @@
 
       <section class="possibilities">
          <div class="container">
-            <h2>Чем мы занимаемся</h2>
-            <div class="possibilities__images">
-               <ul>
-                  <li class="possibilities__image-item">
-                     <img src="images/work/01.jpg" alt="Написание кода" width="370">
-                  </li>
-                  <li class="possibilities__image-item">
-                     <img src="images/work/02.jpg" alt="Мобильная разработка" width="370">
-                  </li>
-                  <li class="possibilities__image-item">
-                     <img src="images/work/03.jpg" alt="Графический дизайн" width="370">
-                  </li>
-               </ul>
-            </div>
+            <h2 class="possibilities__title title">Чем мы занимаемся</h2>
+            <ul class="possibilities__images">
+               <li class="possibilities__image-item">
+                  <img src="images/work/01.jpg" alt="Написание кода" width="370">
+               </li>
+               <li class="possibilities__image-item">
+                  <img src="images/work/02.jpg" alt="Мобильная разработка" width="370">
+               </li>
+               <li class="possibilities__image-item">
+                  <img src="images/work/03.jpg" alt="Графический дизайн" width="370">
+               </li>
+            </ul>
          </div>
       </section>
 
 
       <section class="team">
          <div class="container">
-            <h2>Наша команда</h2>
-            <div class="team__cards">
-               <ul>
-                  <li>
-                     <div class="team__card">
-                        <img src="images/team/01.jpg" alt="Игорь Демьяненко" width="270" class="team__photo">
-                        <h3 class="team__name">Игорь Демьяненко</h3>
-                        <p class="team__position">Product Designer</p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="team__card">
-                        <img src="images/team/02.jpg" alt="Ольга Репина" width="270" class="team__photo">
-                        <h3 class="team__name">Ольга Репина</h3>
-                        <p class="team__position">Frontend Developer</p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="team__card">
-                        <img src="images/team/03.jpg" alt="Николай Тарасов" width="270" class="team__photo">
-                        <h3 class="team__name">Николай Тарасов</h3>
-                        <p class="team__position">Marketing</p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="team__card">
-                        <img src="images/team/04.jpg" alt="Михаил Ермаков" width="270" class="team__photo">
-                        <h3 class="team__name">Михаил Ермаков</h3>
-                        <p class="team__position">UI Designer</p>
-                     </div>
-                  </li>
-               </ul>
-            </div>
+            <h2 class="team__title title">Наша команда</h2>
+            <ul class="team__cards">
+               <li>
+                  <div class="team__card">
+                     <img src="images/team/01.jpg" alt="Игорь Демьяненко" width="270" class="team__photo">
+                     <h3 class="team__name">Игорь Демьяненко</h3>
+                     <p class="team__position">Product Designer</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="team__card">
+                     <img src="images/team/02.jpg" alt="Ольга Репина" width="270" class="team__photo">
+                     <h3 class="team__name">Ольга Репина</h3>
+                     <p class="team__position">Frontend Developer</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="team__card">
+                     <img src="images/team/03.jpg" alt="Николай Тарасов" width="270" class="team__photo">
+                     <h3 class="team__name">Николай Тарасов</h3>
+                     <p class="team__position">Marketing</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="team__card">
+                     <img src="images/team/04.jpg" alt="Михаил Ермаков" width="270" class="team__photo">
+                     <h3 class="team__name">Михаил Ермаков</h3>
+                     <p class="team__position">UI Designer</p>
+                  </div>
+               </li>
+            </ul>
          </div>
       </section>
    </main>
